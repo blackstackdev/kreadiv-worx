@@ -1,6 +1,6 @@
 # Krēˈādiv Worx Static Home Design QA
 
-Target implementation: `http://127.0.0.1:3000/`
+Target implementation: `https://blackstackdev.github.io/kreadiv-worx/`
 
 ## Direction under test
 
@@ -27,10 +27,11 @@ The website is a sharp, static studio presentation. The approved production mark
 - Interaction: mobile navigation opens visibly with `aria-expanded=true`, closes with Escape, and restores `aria-expanded=false`.
 - Route proof: the header reaches `/about`, `/about` exposes the correct document structure, and `/links` includes the About destination.
 - Concept fidelity: implementation preserves the concept's navigation order, black/bone/cobalt/coral palette, oversized editorial headline, open two-column ownership split, continuous three-chapter timeline, and single-column mobile collapse. Copy is code-native and public-safe; no material concept mismatch remains.
-- Evidence: `C:\Users\deens\.codex\visualizations\2026\08\23\01a02d88-833e-7330-af6e-a5d363916005\kreadiv-static-site\kreadiv-home-proof-fixed.png`, `kreadiv-about-desktop.png`, `kreadiv-about-mobile.png`, and `kreadiv-about-end.png`.
+- Deployment proof: the warning-free GitHub Pages workflow completed successfully; `/`, `/about/`, `/links/`, the production mark, and the NestKeeper screenshots return HTTPS 200.
+- Live Chrome proof: desktop and 390px mobile layouts render correctly; About navigation, Journey content, mobile-menu open and Escape-close interactions pass with zero console warnings/errors.
 
 ## Result
 
-No actionable P0, P1, or P2 visual defect remains in this static pass. The site is open locally for Raiden's hands-on review and remains undeployed.
+No actionable P0, P1, or P2 visual defect remains in this static pass. The site is publicly deployed and verified on GitHub Pages.
 
 final result: passed

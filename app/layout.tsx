@@ -3,6 +3,7 @@ import "./globals.css";
 import { sitePath } from "./lib/site-path";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://blackstackdev.github.io"),
   title: {
     default: "Krēˈādiv Worx — Ideas, made visible.",
     template: "%s — Krēˈādiv Worx",

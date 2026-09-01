@@ -4,7 +4,8 @@ import { useEffect, useState } from "react";
 import { BrandMark } from "./brand-mark";
 
 const items = [
-  ["Work", "/#work"],
+  ["NestKeeper", "/nestkeeper"],
+  ["PortalDrop", "/portaldrop"],
   ["About", "/about"],
   ["Approach", "/#approach"],
   ["Roadmap", "/#roadmap"],
@@ -33,7 +34,7 @@ export function SiteHeader() {
         <div className="menu-panel__signal"><BrandMark /></div>
         <nav aria-label="Mobile navigation">
           {items.map(([label, href], index) => <Link key={href} href={href} onClick={() => setOpen(false)}><small>0{index + 1}</small>{label}<span>↘</span></Link>)}
-          <Link href="/links" onClick={() => setOpen(false)}><small>05</small>Links<span>↗</span></Link>
+          <Link href="/links" onClick={() => setOpen(false)}><small>06</small>Links<span>↗</span></Link>
         </nav>
         <p>Useful software · visibly human craft</p>
       </div>

@@ -18,7 +18,8 @@ const portfolio = [
   {
     name: "PortalDrop",
     status: "Private beta",
-    text: "A direct, local transfer path between the devices already in your hands.",
+    text: "Private file handoff across trusted Windows PCs and Android devices, with one Windows host and no PortalDrop cloud.",
+    href: "/portaldrop",
   },
   {
     name: "Bounded Memory Core",
@@ -102,6 +103,7 @@ export default function Home() {
               <span>Windows · v1.0.4</span>
               <p>Packaging is verified. Public purchase and download open only after the remaining launch gate is closed.</p>
             </div>
+            <Link className="button product-detail-link" href="/nestkeeper">Open the NestKeeper proof <span>→</span></Link>
           </div>
 
           <div className="product-visual">
@@ -137,9 +139,10 @@ export default function Home() {
         </div>
         <div className="portfolio-grid">
           {portfolio.map((item, index) => (
-            <article className="portfolio-card" key={item.name}>
+            <article className={`portfolio-card ${item.href ? "portfolio-card--linked" : ""}`} key={item.name}>
               <div><span className="card-index">{String(index + 2).padStart(2, "0")}</span><span className="status">{item.status}</span></div>
               <h3>{item.name}</h3><p>{item.text}</p>
+              {item.href ? <Link className="portfolio-card-link" href={item.href}>Open the proof <span>→</span></Link> : null}
             </article>
           ))}
         </div>
@@ -151,8 +154,8 @@ export default function Home() {
           <h2>A roadmap without<br /><em>invented dates.</em></h2>
         </div>
         <div className="roadmap-list">
-          <article><span className="roadmap-dot roadmap-dot--live" /><p>Now</p><h3>Finish NestKeeper 1.0</h3><small>Final all-drive gate, current launch media, storefront handoff.</small></article>
-          <article><span className="roadmap-dot" /><p>Next</p><h3>Open the public front door</h3><small>Approve this site, refine the mark in context, connect the real support and social routes.</small></article>
+          <article><span className="roadmap-dot roadmap-dot--live" /><p>Now</p><h3>Prepare the founding release</h3><small>Final all-drive gate, current v1.0.4 media, seller terms, and a private customer delivery test.</small></article>
+          <article><span className="roadmap-dot" /><p>Next</p><h3>Open checkout deliberately</h3><small>Connect the approved merchant of record, activate the real purchase route, and verify a new-customer install.</small></article>
           <article><span className="roadmap-dot" /><p>Then</p><h3>Productize the catalogue</h3><small>Give DigiBoard, PDF Forge, and the strongest tools the same evidence-led treatment.</small></article>
         </div>
       </section>

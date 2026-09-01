@@ -9,6 +9,8 @@ export const metadata: Metadata = {
 
 const links = [
   { label: "Company home", note: "Mission, work, and roadmap", href: "/", external: false },
+  { label: "NestKeeper", note: "Windows release candidate, pricing, privacy, and proof", href: "/nestkeeper", external: false },
+  { label: "PortalDrop", note: "PC-to-PC and Android private file handoff proof", href: "/portaldrop", external: false },
   { label: "About Raiden", note: "The builder, the collaboration, and the journey", href: "/about", external: false },
   { label: "Public builds on GitHub", note: "Code, proofs, and hackathon work", href: "https://github.com/blackstackdev", external: true },
   { label: "Bounded Memory Core", note: "Human-governed agent memory proof", href: "https://github.com/blackstackdev/bounded-memory-core", external: true },
@@ -46,8 +48,8 @@ export default function LinksPage() {
               </Link>
             )
           ))}
-          <div className="link-pending" aria-label="NestKeeper launch link coming soon">
-            <span className="link-number">06</span><span><strong>NestKeeper</strong><small>Purchase and download route opens after the launch gate</small></span><b>Soon</b>
+          <div className="link-pending" aria-label="NestKeeper checkout coming after the launch gate">
+            <span className="link-number">08</span><span><strong>NestKeeper checkout</strong><small>Purchase and download open after the verified delivery gate</small></span><b>Soon</b>
           </div>
         </div>
         <footer className="links-footer"><span>Cape Town, South Africa</span><span>Local-first by default.</span></footer>

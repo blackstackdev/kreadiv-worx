@@ -114,6 +114,23 @@ test("renders PortalDrop privacy and support without exposing private routing da
   assert.match(support, /Do not publish pairing links, QR codes, private IP addresses/);
 });
 
+test("renders PromptDeck privacy and support for the local-only internal test", async () => {
+  const [privacyResponse, supportResponse] = await Promise.all([
+    render("/promptdeck/privacy"),
+    render("/promptdeck/support"),
+  ]);
+  assert.equal(privacyResponse.status, 200);
+  assert.equal(supportResponse.status, 200);
+  const [privacy, support] = await Promise.all([
+    privacyResponse.text(),
+    supportResponse.text(),
+  ]);
+  assert.match(privacy, /does not receive prompt contents/);
+  assert.match(privacy, /billing is not configured and does not initialise/);
+  assert.match(support, /Use a fictional prompt to reproduce the issue/);
+  assert.match(support, /kreadivworx@proton\.me/);
+});
+
 test("keeps the presentation static and the navigation accessible", async () => {
   const [css, header, mark, page] = await Promise.all([
     readFile(new URL("../app/globals.css", import.meta.url), "utf8"),

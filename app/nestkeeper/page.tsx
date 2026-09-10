@@ -66,7 +66,7 @@ export default function NestKeeperPage() {
               It never decides which file matters. You do.
             </p>
             <div className="product-badges" aria-label="Product status">
-              <span>Founding release candidate</span><span>Local-only</span><span>No subscription</span>
+              <span>Founding release</span><span>Local-only</span><span>No subscription</span>
             </div>
             <div className="hero-actions">
               {nestkeeperCheckoutReady ? (
@@ -76,7 +76,7 @@ export default function NestKeeperPage() {
               )}
               <a className="button button--quiet" href="#proof">Inspect the proof <span>↓</span></a>
             </div>
-            <p className="product-gate-note">Planned founding price: <strong>£9 GBP once</strong>. The Lemon Squeezy buyer link stays closed while final verification, seller terms, signing, and test delivery are completed.</p>
+            <p className="product-gate-note">{nestkeeperCheckoutReady ? "Founding price: " : "Planned founding price: "}<strong>£9 GBP once</strong>. {nestkeeperCheckoutReady ? "Secure checkout through Lemon Squeezy. Includes the installer, portable app and user guides. Any applicable tax is shown at checkout." : "Sales have not opened yet. Our store application is under review; the test checkout has passed."}</p>
           </div>
           <div className="product-hero-media">
             <div className="product-screen-frame">
@@ -87,6 +87,16 @@ export default function NestKeeperPage() {
           </div>
         </section>
       </div>
+
+      <section className="product-section shell" aria-labelledby="demo-title">
+        <div className="product-section-heading"><p className="eyebrow"><span /> See it in action</p><h2 id="demo-title">Copies of copies?</h2></div>
+        <video controls playsInline preload="metadata" width="1280" height="960" style={{ width: "100%", height: "auto", maxWidth: 960, borderRadius: 16 }} aria-label="NestKeeper: a 21-second demonstration with sample files">
+          <source src={sitePath("/products/nestkeeper-advert-v2.mp4")} type="video/mp4" />
+          <track kind="captions" src={sitePath("/products/nestkeeper-advert-v2.vtt")} srcLang="en" label="English" />
+          <a href={sitePath("/products/nestkeeper-advert-v2.mp4")}>Watch the NestKeeper demonstration</a>
+        </video>
+        <p>Eight sample files. Three exact-duplicate groups. Review which copies are marked before cleanup. No files are deleted in this demonstration; scan waiting time is condensed.</p>
+      </section>
 
       <section className="product-proof" id="proof" aria-labelledby="proof-title">
         <div className="shell">
@@ -133,12 +143,12 @@ export default function NestKeeperPage() {
       <section className="product-section shell" aria-labelledby="edition-title">
         <div className="product-offer">
           <div className="product-offer-copy">
-            <p className="eyebrow"><span /> Planned founding edition</p>
+            <p className="eyebrow"><span /> {nestkeeperCheckoutReady ? "Founding edition" : "Planned founding edition"}</p>
             <h2 id="edition-title">One purchase.<br /><em>No rent.</em></h2>
             <p>Built for people managing years of downloads, photos, project folders, backups, and external drives on Windows.</p>
           </div>
           <div className="product-price-card">
-            <p className="status status--blue">{nestkeeperCheckoutReady ? "Founding checkout available" : "Lemon Squeezy integration ready · no live URL"}</p>
+            <p className="status status--blue">{nestkeeperCheckoutReady ? "Founding checkout available" : "Store approval pending · sales not open"}</p>
             <div className="product-price"><strong>£9</strong><span>founding price<br />one-time</span></div>
             <ul>
               <li>Installer and portable Windows builds</li>
@@ -154,13 +164,13 @@ export default function NestKeeperPage() {
       <section className="product-trust" aria-labelledby="trust-title">
         <div className="shell product-trust-grid">
           <div>
-            <p className="eyebrow eyebrow--light"><span /> Release gate</p>
-            <h2 id="trust-title">Why can&apos;t I buy it yet?</h2>
+            <p className="eyebrow eyebrow--light"><span /> Before you buy</p>
+            <h2 id="trust-title">{nestkeeperCheckoutReady ? "Know what you’re getting." : "Why can’t I buy it yet?"}</h2>
           </div>
           <div className="product-gate-list">
-            <p><strong>Final all-drive verification</strong><span>The focused and multi-folder workflows are proven. The exact broadest scope still receives one monitored gate.</span></p>
-            <p><strong>Windows signing decision</strong><span>The current independent binaries are unsigned and may trigger SmartScreen. That cannot be hidden from customers.</span></p>
-            <p><strong>Seller and delivery test</strong><span>Legal seller details, refund/support terms, checkout identity, and a private customer download test must agree.</span></p>
+            <p><strong>Exact duplicates</strong><span>Finds files with identical contents, not visually similar photos. Review the results before choosing a cleanup action.</span></p>
+            <p><strong>Windows installation</strong><span>The current builds are unsigned and may trigger Windows SmartScreen. Installer and portable versions are included.</span></p>
+            <p><strong>{nestkeeperCheckoutReady ? "Checkout and support" : "Store review in progress"}</strong><span>{nestkeeperCheckoutReady ? "Lemon Squeezy handles checkout and delivery. Contact kreadivworx@proton.me for product support." : "Our test payment succeeded. Lemon Squeezy must approve the store before live sales; test mode does not permit customer downloads."}</span></p>
           </div>
         </div>
       </section>
@@ -171,7 +181,7 @@ export default function NestKeeperPage() {
           <article><h3>Does it upload my files?</h3><p>No. The packaged app has no account, telemetry, advertising, cloud sync, or upload feature.</p></article>
           <article><h3>Does it find similar photos?</h3><p>No. v1.0.4 finds byte-for-byte exact duplicates with SHA256, not visually similar or re-encoded media.</p></article>
           <article><h3>Does scanning delete anything?</h3><p>No. Scanning is read-only. Cleanup and restore actions require separate, deliberate confirmation.</p></article>
-          <article><h3>Which Windows versions?</h3><p>The release candidate targets 64-bit Windows 10 and 11. No Node.js, account, or internet connection is required.</p></article>
+          <article><h3>Which Windows versions?</h3><p>The release targets 64-bit Windows 10 and 11. No Node.js, account, or internet connection is required.</p></article>
         </div>
         <div className="product-policy-links">
           <Link href="/privacy">Read the privacy boundary →</Link>

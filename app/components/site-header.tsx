@@ -25,7 +25,7 @@ export function SiteHeader() {
       <span className="brand-purpose" aria-hidden="true">Useful software<br />Human craft</span>
       <nav className="desktop-nav" aria-label="Primary navigation">
         {items.map(([label, href]) => <Link key={href} href={href}>{label}</Link>)}
-        <Link className="nav-cta" href="/links">Links ↗</Link>
+        <a className="nav-cta" href="https://kreadivworx.lemonsqueezy.com/">Shop ↗</a>
       </nav>
       <button className={`menu-trigger ${open ? "is-open" : ""}`} onClick={() => setOpen(!open)} aria-expanded={open} aria-controls="mobile-menu" aria-label={open ? "Close navigation" : "Open navigation"}>
         <span /><span /><span className="menu-label">{open ? "Close" : "Menu"}</span>
@@ -35,6 +35,7 @@ export function SiteHeader() {
         <nav aria-label="Mobile navigation">
           {items.map(([label, href], index) => <Link key={href} href={href} onClick={() => setOpen(false)}><small>0{index + 1}</small>{label}<span>↘</span></Link>)}
           <Link href="/links" onClick={() => setOpen(false)}><small>06</small>Links<span>↗</span></Link>
+          <a href="https://kreadivworx.lemonsqueezy.com/"><small>07</small>Shop<span>↗</span></a>
         </nav>
         <p>Useful software · visibly human craft</p>
       </div>

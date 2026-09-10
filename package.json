@@ -12,7 +12,7 @@
     "build:pages": "next build",
     "start": "vinext start",
     "postinstall": "node scripts/patch-vinext-windows-paths.mjs",
-    "test": "npm run build && node --test tests/rendered-html.test.mjs",
+    "test": "npm run build && node --test tests/rendered-html.test.mjs tests/nestkeeper-checkout.test.mjs",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "drizzle-kit generate"
   },

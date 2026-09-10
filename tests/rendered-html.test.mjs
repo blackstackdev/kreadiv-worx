@@ -52,18 +52,19 @@ test("uses one production identity across the link hub", async () => {
   assert.match(html, /href="\/portaldrop"/);
 });
 
-test("renders the NestKeeper founding-release candidate with a prepared but closed checkout", async () => {
+test("renders the NestKeeper founding release with its approved live checkout", async () => {
   const response = await render("/nestkeeper");
   assert.equal(response.status, 200);
   const html = await response.text();
   assert.match(html, /Find the copies/);
   assert.match(html, /52,117/);
   assert.match(html, /236\.44 GB of possible waste/);
-  assert.match(html, /Lemon Squeezy checkout prepared · not live/);
+  assert.match(html, /Buy NestKeeper — £9/);
   assert.match(html, /£9 GBP once/);
   assert.match(html, /href="\/privacy"/);
   assert.match(html, /href="\/support"/);
-  assert.doesNotMatch(html, /lemonsqueezy\.com\/buy\/|gumroad\.com\/l\//);
+  assert.match(html, /f98b1b0c-627d-4088-b954-c5f7639f193b/);
+  assert.match(html, /Founding checkout available/);
 });
 
 test("renders current privacy and support boundaries", async () => {
@@ -78,7 +79,7 @@ test("renders current privacy and support boundaries", async () => {
     supportResponse.text(),
   ]);
   assert.match(privacy, /no account system, telemetry, advertising, cloud sync, or upload feature/i);
-  assert.match(privacy, /No checkout is connected today/);
+  assert.match(privacy, /Software purchases are processed by Lemon Squeezy/);
   assert.match(privacy, /PortalDrop has no hosted file cloud/);
   assert.match(support, /Do not post screenshots containing personal folder names/);
   assert.match(support, /source code, installer, portable build.*are not published/s);

@@ -5,6 +5,7 @@ import { SiteHeader } from "./components/site-header";
 import { sitePath } from "./lib/site-path";
 
 const portfolio = [
+  { name: "Jobbook", status: "Early access · £9 once", text: "Offline quotes, invoices and payment records for independent trades. Seven currencies; one currency per book.", href: "/jobbook" },
   {
     name: "DigiBoard",
     status: "Pre-release",
@@ -73,7 +74,7 @@ export default function Home() {
 
       <section className="proof-strip" aria-label="NestKeeper verified proof">
         <div className="shell proof-grid">
-          <p><strong>NestKeeper</strong><span>Flagship release candidate</span></p>
+          <p><strong>NestKeeper</strong><span>Founding release</span></p>
           <p><strong>v1.0.4</strong><span>Packaged Windows build</span></p>
           <p><strong>28/28</strong><span>Focused checks passed</span></p>
           <p><strong>0 uploads</strong><span>Local-only by design</span></p>
@@ -91,7 +92,7 @@ export default function Home() {
           <div className="product-copy">
             <div className="product-title-row">
               <Image src={sitePath("/products/nestkeeper-icon.png")} alt="" width={512} height={512} unoptimized />
-              <div><p className="status status--blue">Release candidate</p><h3>NestKeeper</h3></div>
+              <div><p className="status status--blue">Available now</p><h3>NestKeeper</h3></div>
             </div>
             <p className="product-lede">Find exact duplicate files across folders and drives, review every match, then choose what happens next.</p>
             <ul className="feature-list">
@@ -101,7 +102,7 @@ export default function Home() {
             </ul>
             <div className="product-note">
               <span>Windows · v1.0.4</span>
-              <p>Packaging is verified. Public purchase and download open only after the remaining launch gate is closed.</p>
+              <p>£9 GBP once, plus applicable tax. Includes installer, portable app and guides through Lemon Squeezy.</p>
             </div>
             <Link className="button product-detail-link" href="/nestkeeper">Open the NestKeeper proof <span>→</span></Link>
           </div>
@@ -154,8 +155,8 @@ export default function Home() {
           <h2>A roadmap without<br /><em>invented dates.</em></h2>
         </div>
         <div className="roadmap-list">
-          <article><span className="roadmap-dot roadmap-dot--live" /><p>Now</p><h3>Prepare the founding release</h3><small>Final all-drive gate, current v1.0.4 media, seller terms, and a private customer delivery test.</small></article>
-          <article><span className="roadmap-dot" /><p>Next</p><h3>Open checkout deliberately</h3><small>Connect the approved merchant of record, activate the real purchase route, and verify a new-customer install.</small></article>
+          <article><span className="roadmap-dot roadmap-dot--live" /><p>Now</p><h3>NestKeeper and Jobbook are available</h3><small>Windows software with one-time pricing, clear limits, and support from the studio.</small></article>
+          <article><span className="roadmap-dot" /><p>Next</p><h3>Learn from real use</h3><small>Help early customers get started, collect useful feedback, and improve the everyday workflow.</small></article>
           <article><span className="roadmap-dot" /><p>Then</p><h3>Productize the catalogue</h3><small>Give DigiBoard, PDF Forge, and the strongest tools the same evidence-led treatment.</small></article>
         </div>
       </section>

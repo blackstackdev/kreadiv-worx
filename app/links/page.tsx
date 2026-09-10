@@ -8,8 +8,10 @@ export const metadata: Metadata = {
 };
 
 const links = [
+  { label: "Shop our software", note: "NestKeeper and Jobbook · £9 GBP each, one-time · tax at checkout", href: "https://kreadivworx.lemonsqueezy.com/", external: true },
+  { label: "Jobbook", note: "Offline quotes, invoices and payment records for Windows · early access", href: "/jobbook", external: false },
   { label: "Company home", note: "Mission, work, and roadmap", href: "/", external: false },
-  { label: "NestKeeper", note: "Windows release candidate, pricing, privacy, and proof", href: "/nestkeeper", external: false },
+  { label: "NestKeeper", note: "Windows duplicate finder, pricing, privacy, and proof", href: "/nestkeeper", external: false },
   { label: "PortalDrop", note: "PC-to-PC and Android private file handoff proof", href: "/portaldrop", external: false },
   { label: "About Raiden", note: "The builder, the collaboration, and the journey", href: "/about", external: false },
   { label: "Public builds on GitHub", note: "Code, proofs, and hackathon work", href: "https://github.com/blackstackdev", external: true },
@@ -48,9 +50,7 @@ export default function LinksPage() {
               </Link>
             )
           ))}
-          <div className="link-pending" aria-label="NestKeeper checkout coming after the launch gate">
-            <span className="link-number">08</span><span><strong>NestKeeper checkout</strong><small>Purchase and download open after the verified delivery gate</small></span><b>Soon</b>
-          </div>
+
         </div>
         <footer className="links-footer"><span>Cape Town, South Africa</span><span>Local-first by default.</span></footer>
       </div>

@@ -4,7 +4,11 @@ The public home for Krēˈādiv Worx: an independent software studio building us
 
 Live site: https://blackstackdev.github.io/kreadiv-worx/
 
-## Current state
+## Live shop — 10 September 2026
+
+NestKeeper and Jobbook are published at £9 GBP each, one-time plus applicable tax. The header Shop link, link hub, and product pages connect to https://kreadivworx.lemonsqueezy.com/. Jobbook is early access 0.1.0. Customer delivery files are configured; a real paid-order download has not been verified.
+
+## Earlier release preparation
 
 - Static public presentation prepared for GitHub Pages.
 - NestKeeper is the flagship commercial release candidate; PortalDrop beta.29 is the current cross-device private-transfer candidate.

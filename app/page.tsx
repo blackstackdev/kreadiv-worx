@@ -18,7 +18,7 @@ const portfolio = [
   },
   {
     name: "PortalDrop",
-    status: "Private beta",
+    status: "Founding beta · £9 once",
     text: "Private file handoff across trusted Windows PCs and Android devices, with one Windows host and no PortalDrop cloud.",
     href: "/portaldrop",
   },

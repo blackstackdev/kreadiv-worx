@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 
 const proof = [
   ["6/6", "release checks passed"],
-  ["2 PCs", "real browser handoff proven"],
+  ["Huawei", "physical transfer and download checked"],
   ["1 host", "stores and serves the files"],
   ["0", "PortalDrop cloud uploads"],
 ];
@@ -51,20 +51,20 @@ export default function PortalDropPage() {
         <SiteHeader />
         <section className="product-hero shell">
           <div className="product-hero-copy">
-            <p className="eyebrow eyebrow--light"><span /> PortalDrop · Windows + Android · beta.29</p>
+            <p className="eyebrow eyebrow--light"><span /> PortalDrop · Windows + Android · beta.30</p>
             <h1>Private file<br /><em>handoff.</em></h1>
             <p className="product-hero-lede">
               Send files between trusted Windows PCs and Android devices through one
-              Windows host you control. No PortalDrop cloud account. No invented shortcut.
+              Windows host you control. Keep your handoff on your own network.
             </p>
             <div className="product-badges" aria-label="Product status">
-              <span>Private beta</span><span>PC to PC proven</span><span>Android bundle ready</span>
+              <span>Founding beta · £9 once</span><span>PC to PC</span><span>Windows ↔ Android</span>
             </div>
             <div className="hero-actions">
-              <a className="button button--primary" href="#demo">Watch the real handoff <span>↓</span></a>
-              <a className="button button--quiet" href="#connection">Understand connection <span>↓</span></a>
+              <a className="button button--primary" href="https://kreadivworx.lemonsqueezy.com/checkout/buy/fd4654e6-16b9-42b1-9ffe-f3b2aba83d60">Buy PortalDrop · £9 once <span>↗</span></a>
+              <a className="button button--quiet" href="#demo">Watch the real handoff <span>↓</span></a>
             </div>
-            <p className="product-gate-note">The signed Android bundle is prepared for Play testing. Public installation remains closed while the Play listing and physical-device testing gates are completed.</p>
+            <p className="product-gate-note">Direct download for Windows 10/11 (64-bit) and Android 8+. £9 once, plus applicable tax shown at checkout. Secure checkout and download delivery through Lemon Squeezy.</p>
           </div>
           <div className="product-hero-media">
             <div className="product-screen-frame portaldrop-feature-frame">
@@ -135,11 +135,11 @@ export default function PortalDropPage() {
 
       <section className="product-trust" aria-labelledby="portal-gate-title">
         <div className="shell product-trust-grid">
-          <div><p className="eyebrow eyebrow--light"><span /> Release gate</p><h2 id="portal-gate-title">What is ready—and what is not.</h2></div>
+          <div><p className="eyebrow eyebrow--light"><span /> Founding beta</p><h2 id="portal-gate-title">Know what you are buying.</h2></div>
           <div className="product-gate-list">
-            <p><strong>Ready</strong><span>Windows installers, signed Android App Bundle, real PC-to-PC proof, store graphics, captions, privacy, and support copy.</span></p>
-            <p><strong>Play testing next</strong><span>The app can enter Google Play&apos;s testing track after its listing and required declarations are completed.</span></p>
-            <p><strong>Still required</strong><span>Physical Android-device screenshots and the required personal-account testing period remain honest release gates.</span></p>
+            <p><strong>£9 once</strong><span>Windows host and Android companion for one person, up to three personally controlled Windows PCs and their paired devices. No subscription. Applicable tax is shown at checkout.</span></p>
+            <p><strong>Direct installation</strong><span>Windows setup or MSI, plus a signed Android APK. Windows installers are unsigned and may trigger SmartScreen. Android requires allowing installation from your chosen download source.</span></p>
+            <p><strong>Practical limits</strong><span>The host stays on. Local HTTP is not encrypted. Files are limited to 2 GB each. Updates are manual; background alerts depend on phone settings. Keep independent backups.</span></p>
           </div>
         </div>
       </section>
@@ -150,7 +150,8 @@ export default function PortalDropPage() {
           <article><h3>Does it work PC to PC?</h3><p>Yes. Another trusted Windows PC can pair through its browser. Android is an additional companion, not the only destination.</p></article>
           <article><h3>Does it upload to PortalDrop?</h3><p>No. The Windows host you run stores and serves the files. Krēˈādiv Worx does not receive them.</p></article>
           <article><h3>Must I install Tailscale?</h3><p>No for the same trusted Wi-Fi. Use it only if you want PortalDrop&apos;s current private remote-access route.</p></article>
-          <article><h3>Can I install the Android app today?</h3><p>Not publicly yet. The signed bundle is ready for Play testing, but the listing and physical-device gates are still open.</p></article>
+          <article><h3>Does my Huawei need Google services?</h3><p>No. Use Enter Portal Link to pair. The optional QR scanner is only shown on phones with Google services. The direct APK is included with the Windows download.</p></article>
+          <article><h3>What does the purchase include?</h3><p>The supplied beta has no licence expiry. Released 0.9.x fixes are included when available; a future 1.x upgrade is not promised. Request a refund within 14 days at kreadivworx@proton.me. Your consumer rights remain unaffected.</p></article>
         </div>
         <div className="product-policy-links">
           <Link href="/portaldrop/privacy">PortalDrop privacy →</Link>

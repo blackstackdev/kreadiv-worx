@@ -12,7 +12,7 @@ const links = [
   { label: "Jobbook", note: "Offline quotes, invoices and payment records for Windows · early access", href: "/jobbook", external: false },
   { label: "Company home", note: "Mission, work, and roadmap", href: "/", external: false },
   { label: "NestKeeper", note: "Windows duplicate finder, pricing, privacy, and proof", href: "/nestkeeper", external: false },
-  { label: "PortalDrop", note: "PC-to-PC and Android private file handoff proof", href: "/portaldrop", external: false },
+  { label: "PortalDrop", note: "Private file handoff for Windows + Android · £9 once", href: "/portaldrop", external: false },
   { label: "About Raiden", note: "The builder, the collaboration, and the journey", href: "/about", external: false },
   { label: "Public builds on GitHub", note: "Code, proofs, and hackathon work", href: "https://github.com/blackstackdev", external: true },
   { label: "Bounded Memory Core", note: "Human-governed agent memory proof", href: "https://github.com/blackstackdev/bounded-memory-core", external: true },

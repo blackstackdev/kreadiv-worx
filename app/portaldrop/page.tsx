@@ -51,7 +51,7 @@ export default function PortalDropPage() {
         <SiteHeader />
         <section className="product-hero shell">
           <div className="product-hero-copy">
-            <p className="eyebrow eyebrow--light"><span /> PortalDrop · Windows + Android · beta.30</p>
+            <p className="eyebrow eyebrow--light"><span /> PortalDrop · Windows + Android · beta.33</p>
             <h1>Private file<br /><em>handoff.</em></h1>
             <p className="product-hero-lede">
               Send files between trusted Windows PCs and Android devices through one
@@ -64,7 +64,7 @@ export default function PortalDropPage() {
               <a className="button button--primary" href="https://kreadivworx.lemonsqueezy.com/checkout/buy/fd4654e6-16b9-42b1-9ffe-f3b2aba83d60">Buy PortalDrop · £9 once <span>↗</span></a>
               <a className="button button--quiet" href="#demo">Watch the real handoff <span>↓</span></a>
             </div>
-            <p className="product-gate-note">Direct download for Windows 10/11 (64-bit) and Android 8+. £9 once, plus applicable tax shown at checkout. Secure checkout and download delivery through Lemon Squeezy.</p>
+            <p className="product-gate-note">Windows host: £9 once, plus applicable tax shown at checkout. The Android companion is free to use with your licensed host. Includes Windows 10/11 (64-bit) installers and the Android 8+ APK. Checkout and download delivery through Lemon Squeezy. AppGallery release is pending review submission.</p>
           </div>
           <div className="product-hero-media">
             <div className="product-screen-frame portaldrop-feature-frame">

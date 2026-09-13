@@ -64,7 +64,7 @@ export default function PortalDropPage() {
               <a className="button button--primary" href="https://kreadivworx.lemonsqueezy.com/checkout/buy/fd4654e6-16b9-42b1-9ffe-f3b2aba83d60">Buy PortalDrop · £9 once <span>↗</span></a>
               <a className="button button--quiet" href="#demo">Watch the real handoff <span>↓</span></a>
             </div>
-            <p className="product-gate-note">Windows host: £9 once, plus applicable tax shown at checkout. The Android companion is free to use with your licensed host. Includes Windows 10/11 (64-bit) installers and the Android 8+ APK. Checkout and download delivery through Lemon Squeezy. AppGallery release is pending review submission.</p>
+            <p className="product-gate-note">Windows host: £9 once, plus applicable tax shown at checkout. The Android companion is free to use with your licensed host. Includes Windows 10/11 (64-bit) installers and the Android 8+ APK. Checkout and download delivery through Lemon Squeezy. AppGallery release is awaiting Huawei review.</p>
           </div>
           <div className="product-hero-media">
             <div className="product-screen-frame portaldrop-feature-frame">

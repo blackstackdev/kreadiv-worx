@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 };
 
 const proof = [
-  ["6/6", "release checks passed"],
+  ["33/33", "release checks passed"],
   ["Huawei", "physical transfer and download checked"],
   ["1 host", "stores and serves the files"],
   ["0", "PortalDrop cloud uploads"],
@@ -58,13 +58,14 @@ export default function PortalDropPage() {
               Windows host you control. Keep your handoff on your own network.
             </p>
             <div className="product-badges" aria-label="Product status">
-              <span>Founding beta · £9 once</span><span>PC to PC</span><span>Windows ↔ Android</span>
+              <span>Free Windows + Android</span><span>PC to PC</span><span>Windows ↔ Android</span>
             </div>
             <div className="hero-actions">
-              <a className="button button--primary" href="https://kreadivworx.lemonsqueezy.com/checkout/buy/fd4654e6-16b9-42b1-9ffe-f3b2aba83d60">Buy PortalDrop · £9 once <span>↗</span></a>
+              <a className="button button--primary" href="https://github.com/blackstackdev/kreadiv-worx/releases/download/portaldrop-beta33-free/PortalDrop-beta33-free.zip">Download PortalDrop free <span>↗</span></a>
               <a className="button button--quiet" href="#demo">Watch the real handoff <span>↓</span></a>
+              <a className="button button--quiet" href="https://github.com/blackstackdev/kreadiv-worx/releases/tag/portaldrop-beta33-free">Individual installers and checksums <span>↗</span></a>
             </div>
-            <p className="product-gate-note">Windows host: £9 once, plus applicable tax shown at checkout. The Android companion is free to use with your licensed host. Includes Windows 10/11 (64-bit) installers and the Android 8+ APK. Checkout and download delivery through Lemon Squeezy. AppGallery release is awaiting Huawei review.</p>
+            <p className="product-gate-note">Free Windows 10/11 (64-bit) host and Android 8+ companion. No payment, card, coupon or activation key. Download the complete package directly. A Windows host must stay running. A revised AppGallery submission is being prepared; this is a direct download.</p>
           </div>
           <div className="product-hero-media">
             <div className="product-screen-frame portaldrop-feature-frame">
@@ -135,11 +136,11 @@ export default function PortalDropPage() {
 
       <section className="product-trust" aria-labelledby="portal-gate-title">
         <div className="shell product-trust-grid">
-          <div><p className="eyebrow eyebrow--light"><span /> Founding beta</p><h2 id="portal-gate-title">Know what you are buying.</h2></div>
+          <div><p className="eyebrow eyebrow--light"><span /> Founding beta</p><h2 id="portal-gate-title">Know what you are installing.</h2></div>
           <div className="product-gate-list">
-            <p><strong>£9 once</strong><span>Windows host and Android companion for one person, up to three personally controlled Windows PCs and their paired devices. No subscription. Applicable tax is shown at checkout.</span></p>
+            <p><strong>Free access</strong><span>Windows host and Android companion, with the full included transfer workflow. No subscription, checkout or activation. Pairing still protects access to your files.</span></p>
             <p><strong>Direct installation</strong><span>Windows setup or MSI, plus a signed Android APK. Windows installers are unsigned and may trigger SmartScreen. Android requires allowing installation from your chosen download source.</span></p>
-            <p><strong>Practical limits</strong><span>The host stays on. Local HTTP is not encrypted. Files are limited to 2 GB each. Updates are manual; background alerts depend on phone settings. Keep independent backups.</span></p>
+            <p><strong>Practical limits</strong><span>The host stays on. Local HTTP is not encrypted. Files are limited to 2 GiB each. Updates are manual; background alerts depend on phone settings. Keep independent backups.</span></p>
           </div>
         </div>
       </section>
@@ -151,7 +152,7 @@ export default function PortalDropPage() {
           <article><h3>Does it upload to PortalDrop?</h3><p>No. The Windows host you run stores and serves the files. Krēˈādiv Worx does not receive them.</p></article>
           <article><h3>Must I install Tailscale?</h3><p>No for the same trusted Wi-Fi. Use it only if you want PortalDrop&apos;s current private remote-access route.</p></article>
           <article><h3>Does my Huawei need Google services?</h3><p>No. Use Enter Portal Link to pair. The optional QR scanner is only shown on phones with Google services. The direct APK is included with the Windows download.</p></article>
-          <article><h3>What does the purchase include?</h3><p>The supplied beta has no licence expiry. Released 0.9.x fixes are included when available; a future 1.x upgrade is not promised. Request a refund within 14 days at kreadivworx@proton.me. Your consumer rights remain unaffected.</p></article>
+          <article><h3>Is the Windows host free too?</h3><p>Yes. Both downloads and their included transfer features are free, with no activation key or expiry. The software remains proprietary. Existing purchase support remains available at kreadivworx@proton.me.</p></article>
         </div>
         <div className="product-policy-links">
           <Link href="/portaldrop/privacy">PortalDrop privacy →</Link>

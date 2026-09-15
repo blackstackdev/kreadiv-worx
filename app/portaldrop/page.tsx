@@ -51,7 +51,7 @@ export default function PortalDropPage() {
         <SiteHeader />
         <section className="product-hero shell">
           <div className="product-hero-copy">
-            <p className="eyebrow eyebrow--light"><span /> PortalDrop · Windows + Android · beta.33</p>
+            <p className="eyebrow eyebrow--light"><span /> PortalDrop · Windows 0.9.1 + Android beta.33</p>
             <h1>Private file<br /><em>handoff.</em></h1>
             <p className="product-hero-lede">
               Send files between trusted Windows PCs and Android devices through one
@@ -61,9 +61,9 @@ export default function PortalDropPage() {
               <span>Free Windows + Android</span><span>PC to PC</span><span>Windows ↔ Android</span>
             </div>
             <div className="hero-actions">
-              <a className="button button--primary" href="https://github.com/blackstackdev/kreadiv-worx/releases/download/portaldrop-beta33-free/PortalDrop-beta33-free.zip">Download PortalDrop free <span>↗</span></a>
+              <a className="button button--primary" href="https://github.com/blackstackdev/kreadiv-worx/releases/download/portaldrop-host091-free/PortalDrop-Windows091-Android33-free.zip">Download PortalDrop free <span>↗</span></a>
               <a className="button button--quiet" href="#demo">Watch the real handoff <span>↓</span></a>
-              <a className="button button--quiet" href="https://github.com/blackstackdev/kreadiv-worx/releases/tag/portaldrop-beta33-free">Individual installers and checksums <span>↗</span></a>
+              <a className="button button--quiet" href="https://github.com/blackstackdev/kreadiv-worx/releases/tag/portaldrop-host091-free">Individual installers and checksums <span>↗</span></a>
             </div>
             <p className="product-gate-note">Free Windows 10/11 (64-bit) host and Android 8+ companion. No payment, card, coupon or activation key. Download the complete package directly. A Windows host must stay running. A revised AppGallery submission is being prepared; this is a direct download.</p>
           </div>

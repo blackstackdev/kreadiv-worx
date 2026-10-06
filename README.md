@@ -4,6 +4,10 @@ The public home for Krēˈādiv Worx: an independent software studio building us
 
 Live site: https://blackstackdev.github.io/kreadiv-worx/
 
+## Studio showcase — 6 October 2026
+
+The approved v0.2.0 portfolio lives at `/showcase/`, linked from the homepage Workbench and official link hub. It features NestKeeper, ōshiro, Jobbook, PortalDrop and Actalume in the existing studio theme, with category filters and screenshot previews. ōshiro is labelled in development; it has no public game download. Public images use existing product material or synthetic demonstration progress. The standalone runtime is kept in `public/showcase/` and copied unchanged into the Pages export; local build notes and private product code are excluded.
+
 ## Live shop — 10 September 2026
 
 NestKeeper and Jobbook are published at £9 GBP each, one-time plus applicable tax. The header Shop link, link hub, and product pages connect to https://kreadivworx.lemonsqueezy.com/. Jobbook is early access 0.1.0. Customer delivery files are configured; a real paid-order download has not been verified.

@@ -18,7 +18,7 @@ const portfolio = [
   },
   {
     name: "PortalDrop",
-    status: "Founding beta · £9 once",
+    status: "Free · Windows + Android",
     text: "Private file handoff across trusted Windows PCs and Android devices, with one Windows host and no PortalDrop cloud.",
     href: "/portaldrop",
   },
@@ -136,7 +136,7 @@ export default function Home() {
       <section className="section shell" id="studio" aria-labelledby="portfolio-title">
         <div className="section-heading section-heading--row">
           <div><p className="eyebrow"><span /> Workbench</p><h2 id="portfolio-title">A wider studio,<br /><em>clearly labelled.</em></h2></div>
-          <p>Some products are close. Some are proofs. Some are still research. We label them honestly and finish them one at a time.</p>
+          <p>Some products are close. Some are proofs. Some are still research. We label them honestly and finish them one at a time.<br /><a className="button" style={{ marginTop: 20, color: "var(--ink)" }} href="https://blackstackdev.github.io/kreadiv-worx/showcase/">Explore the showcase <span>↗</span></a></p>
         </div>
         <div className="portfolio-grid">
           {portfolio.map((item, index) => (

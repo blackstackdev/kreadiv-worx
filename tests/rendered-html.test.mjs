@@ -85,12 +85,15 @@ test("renders current privacy and support boundaries", async () => {
   assert.match(support, /source code, installer, portable build.*are not published/s);
 });
 
-test("renders PortalDrop as a proven PC-to-PC and Android private beta", async () => {
+test("renders PortalDrop's free Windows and Android direct release", async () => {
   const response = await render("/portaldrop");
   assert.equal(response.status, 200);
   const html = await response.text();
   assert.match(html, /Private file.*handoff/s);
-  assert.match(html, /PC to PC proven/);
+  assert.match(html, /Free Windows \+ Android/);
+  assert.match(html, /Windows 0\.9\.1 \+ Android beta\.33/);
+  assert.match(html, /href="https:\/\/github\.com\/blackstackdev\/kreadiv-worx\/releases\/download\/portaldrop-host091-free\/PortalDrop-Windows091-Android33-free\.zip"/);
+  assert.doesNotMatch(html, /£9/);
   assert.match(html, /Archive PC.*Studio PC/s);
   assert.match(html, /Same trusted Wi-Fi/);
   assert.match(html, /Use private Tailscale/);

@@ -8,6 +8,7 @@ export const metadata: Metadata = {
 };
 
 const links = [
+  { label: "Studio showcase", note: "NestKeeper, ōshiro, Jobbook, PortalDrop and Actalume · real interfaces and clear release status", href: "https://blackstackdev.github.io/kreadiv-worx/showcase/", external: true },
   { label: "Shop our software", note: "NestKeeper and Jobbook · £9 GBP each, one-time · tax at checkout", href: "https://kreadivworx.lemonsqueezy.com/", external: true },
   { label: "Jobbook", note: "Offline quotes, invoices and payment records for Windows · early access", href: "/jobbook", external: false },
   { label: "Company home", note: "Mission, work, and roadmap", href: "/", external: false },
@@ -38,13 +39,13 @@ export default function LinksPage() {
           {links.map((item, index) => (
             item.external ? (
               <a key={item.label} href={item.href} target="_blank" rel="noreferrer">
-                <span className="link-number">0{index + 1}</span>
+                <span className="link-number">{String(index + 1).padStart(2, "0")}</span>
                 <span><strong>{item.label}</strong><small>{item.note}</small></span>
                 <b>↗</b>
               </a>
             ) : (
               <Link key={item.label} href={item.href}>
-                <span className="link-number">0{index + 1}</span>
+                <span className="link-number">{String(index + 1).padStart(2, "0")}</span>
                 <span><strong>{item.label}</strong><small>{item.note}</small></span>
                 <b>→</b>
               </Link>
